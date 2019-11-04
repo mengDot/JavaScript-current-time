@@ -1,0 +1,67 @@
+<script>
+
+function showTime() {
+
+var date = new Date();
+
+var Year=date.getFullYear();
+
+var Month=date.getMonth()+1;
+
+var Dates=date.getDate();
+
+var week = date.getDay();
+
+var Hour=date.getHours();
+
+                     if(Hour<10){
+
+                            Hour='0'+Hour;
+
+                     }else{
+
+                                   Hour=Hour;
+
+                            }
+
+var Minute=date.getMinutes();
+
+                            if(Minute<10){
+
+                                   Minute='0'+Minute;
+
+                            }else{
+
+                                   Minute=Minute;
+
+                            }
+
+var Second=date.getSeconds();
+
+                            if(Second<10){
+
+                                   Second='0'+Second;
+
+                            }else{
+
+                                   Second=Second;
+
+                            }
+
+var weeks = ["日","一","二","三","四","五","六"];
+
+var getWeek = "星期" + weeks[week];
+
+document.getElementById('datetime').innerHTML="现在是：" + Year +"年" + Month + "月" + Dates +"日"+" "+ getWeek+" "+ Hour+ ":"+ Minute + ":" + Second;
+
+              setTimeout('showTime()',1000);
+
+              }
+
+              </script>
+
+       <body onload="showTime()">
+
+              <div id="datetime"></div>
+
+       </body>
