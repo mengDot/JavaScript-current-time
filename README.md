@@ -10,6 +10,3 @@
 # 代码2效果图<br>
 <img src = 'https://ae01.alicdn.com/kf/H88368f776d524b348d5bc24ca961857fb.png' /><br>
 
-# 具体说明请查看<br>
-
-# https://www.m7m3.com
